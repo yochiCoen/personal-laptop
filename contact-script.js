@@ -11,4 +11,4 @@ btn_send.addEventListener("click", async () => {
       headers: {
         "Content-Type": "application/json"}, // הגדרת הכותרות של הבקשה, כאשר התוכן מסוג JSON
       body: JSON.stringify({"name_input_contact": name_input_contact, "email_input_contact": email_input_contact, "message_input_contact": message_input_contact})}); // שולח את גוף הבקשה כאובייקט JSON המכיל את ערכי שדות האימייל והסיסמה
-    });
+    });123
