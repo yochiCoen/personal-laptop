@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal laptop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!-- משמש להגדרת ראש העמוד -->
+        <h1>Personal laptop</h1>
+        <nav> <!-- משמש להגדרת תפריט ניווט-->
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="contact-index.html">Contact Us</a>
+            <!-- <a href="#">Login</a> -->
+        </nav>
+    </header> 
+    <!-- לתקן - שינינו מ FORM ל DIV יוחאי-->
+    <div class="Form-box">
+        <div class="Login-form1"> <!-- משמש ליצירת טופס המאגד קבוצה של שדות קלט, כפתורים, ואלמנטים נוספים שאוספים מידע מהמשתמש -->
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="email-input-login" required> <!-- required מציין שהמשתמש חייב למלא את השדה לפני שיוכל להמשיך -->
+                <label>Email</label> <!-- משמש לסיווג ולתיאור שדה קלט בטופס -->
+                <ion-icon name="mail-outline"></ion-icon> <!-- האייקון של המייל -->
+            </div>
+            <div class="input-box">
+                <input type="password" id="password-input-login" required> 
+                <label>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox"> <!-- תיבת הסימון -->
+                <span>
+                    <input type="checkbox" id="login-checkbox">
+                    <label for="login-checkbox">Remember Me</label> <!-- מאפיין ה-for של תג ה-lable מאפשר לקשר את התווית לשדה קלט באמצעות מזהה ייחודי (id) -->
+                </span>
+                <h5>Forget password?</h5> 
+            </div>
+            <button type="submit" class="submit-btn-login">Submit</button> <!-- כפתור ה-Submit -->
+            <h5 class="Register-btn">Dont have an account? Register</h5>
+        </div>
+        <!-- לתקן - שינינו מ FORM ל DIV יוחאי-->
+        <div class="Register-form">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" id="username-input-register" required>
+                <label>Username</label>
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="text" id="email-input-register" required>
+                <label>Email</label>
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password-input-register" required>
+                <label>Password</label>
+                <ion-icon name="lock-closed-outline"></ion-icon>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="register-checkbox">
+                <label for="register-checkbox">I agree to the terms & conditions</label>
+            </div>
+            <button type="submit" class="submit-btn-register">Submit</button>
+            <h5 class="Login-btn">Register before ? Login</h5>
+        </div>
+    </div>
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!-- מייבא את האייקונים מ-ionicons -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!-- מייבא את האייקונים מ-ionicons -->
+    <script src="script.js"></script>
+</body>
+</html>

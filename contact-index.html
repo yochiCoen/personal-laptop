@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+<link rel="stylesheet" href="contact-style.css">
+</head>
+<body>
+    <div class="contact-form">
+        <header> <!-- משמש להגדרת ראש העמוד -->
+            <h1>Personal laptop</h1>
+            <nav> <!-- משמש להגדרת תפריט ניווט-->
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="contact-index.html">Contact Us</a>
+                <!-- <a href="#">Login</a> -->
+            </nav>
+        </header>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="post"> <!-- פתיחת תווית ה-<form> עם מסלול פעולה "#" ושיטת פעולה "post" -->
+                        <input type="text" id="name-input-contact" name="name" placeholder="Enter Your Name"> <!-- שדה קלט לשם -->
+                        <input type="email" id="email-input-contact" name="email" placeholder="Enter Your Email"> <!-- שדה קלט לאימייל -->
+                        <textarea id="message-input-contact" name="message" placeholder="Your Message"></textarea> <!-- שדה טקסט ארוך להודעה -->            
+                    <button type="submit" class="btn-send">Send <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="bg1.png" alt=""> <!-- תמונה רקע של ה-form-->
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script src="contact-script.js"></script>
+</body>
+</html>

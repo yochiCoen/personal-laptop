@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{ /* סלקטור המדבר אל כל האלמנטים בדף */
+    padding: 0; /* מגדיר את המרווח הפנימי של כל האלמנטים ל-0. כאן לא יהיה כל מרווח פנימי בין התוכן של האלמנט לגבולותיו */
+    margin: 0; /* מגדיר את המרווח החיצוני של כל האלמנטים ל-0. כאן לא יהיה כל מרווח חיצוני מסביב לכל האלמנטים */
+    font-family: Arial, Helvetica, sans-serif; /* מגדיר את הגופן הנבחר לשימוש. רשימת הגופנים מופרדת על ידי פסיקים, והדפדפן ישתמש בגופן הראשון שהוא יכול להשיג מהרשימה */
+}
+body{
+    background-image: url(./background.jpg);
+    background-size: cover; /* מגדיר את גודל התמונה הרקע כך שתמלא את כל המסך מבלי לפגוע ביחסי הרוחב-גובה שלה */
+    display: flex; /* מגדיר את האלמנט body להיות Flex container, שמאפשר יותר גמישות בתוכן שב-body */
+    justify-content: center; /* מיישר את האלמנטים באופן אופקי למרכז של קונטיינר ה-Flex (במקרה זה, ה-body) */
+    align-items: center; /* מיישר את האלמנטים באופן אנכי למרכז של קונטיינר ה-Flex */
+    min-height: 100vh; /* מגדיר את גובה האלמנט body (התוכן ישאר נראה על כל הדף גם כאשר משתמש יקטין את גודל הדף) להיות לפחות 100% מגובה החלון הנצפה*/
+    overflow: hidden; /* מסתיר את כל התוכן שחורג ממסגרת ה-body */
+    font-family: 'Poppins',sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-white);
+    margin: 0;
+}
+header{
+    position: fixed; /* מציין שהאלמנט יהיה קבוע במקום מסויים במסך, גם כאשר המשתמש גולל את הדף */
+    top: 0;
+    left: 0;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    padding: 40px 60px;
+    color: white;
+}
+header nav{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 26px;
+}
+header nav a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+header nav a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: white;
+    width: 0%;
+    height: 2.5px;
+    transition: .3s;
+}
+header nav a:hover::before{
+    width: 100%;
+}
+.Form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    backdrop-filter: blur(40px);
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform .6s ease, height .2s ease-in-out;
+}
+.Form-box form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .5s ease;
+}
+.Form-box .Register-form{
+    transform: translateX(-100%);
+}
+.input-box{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 40px 0px;
+}
+.input-box input{
+    width: 90%;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.input-box label{
+    transition: .4s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    transform: translateY(-25px);
+}
+.input-box ion-icon{
+    font-size: 25px;
+}
+.checkbox{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Register-form .checkbox{
+    display: unset;
+}
+.submit-btn-login,
+.submit-btn-register{
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px 0px;
+    border: none;
+    font-size: 16px;
+}
+.Form-box h5,
+.checkbox label,
+.checkbox input{
+    cursor: pointer;
+}
+.btn{
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 20px 0px;
+    border: none;
+    font-size: 16px;
+}

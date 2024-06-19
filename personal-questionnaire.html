@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal laptop</title>
+    <link rel="stylesheet" href="personal-questionnaire.css">
+</head>
+<body>
+    <header> <!-- משמש להגדרת ראש העמוד -->
+        <h1>Personal laptop</h1>
+        <nav> <!-- משמש להגדרת תפריט ניווט-->
+            <a href="index.html">Home</a>
+            <a href="#">About</a>
+            <a href="contact-index.html">Contact Us</a>
+            <!-- <a href="#">Login</a> -->
+        </nav>
+    </header> 
+    <div class="Form-box">
+        <div class="Login-form"> <!-- משמש ליצירת טופס המאגד קבוצה של שדות קלט, כפתורים, ואלמנטים נוספים שאוספים מידע מהמשתמש -->
+            <h2>Personal questionnaire</h2>
+            <div class="form-group">
+                <p id="quest a">What is your preferred manufacturer?</p>
+                <select name="role" required id="manufacturer" class="formControl">
+                    <option value disabled selected >Select</option>
+                    <option value="option a">Asus</option>
+                    <option value="option b">Dell</option>
+                    <option value="option c">HP</option>
+                    <option value="option d">Lenovo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest b">What is the budget for the computer?</p>
+                <select name="role" required id="budget" class="formControl">
+                    <option value disabled selected >Select</option>
+                    <option value="option a">Until 2,000₪</option>
+                    <option value="option b">2,001₪ - 3,000₪</option>
+                    <option value="option c">3,001₪ - 4,000₪</option>
+                    <option value="option d">Over 4,000₪</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest c">What is your favorite screen size?</p>
+                <select name="role" required id="screen size" class="formControl">
+                    <option value disabled selected >Select</option>
+                    <option value="option a">13.3 inch</option>
+                    <option value="option b">14 inch</option>
+                    <option value="option c">15.6 inch</option>
+                    <option value="option d">16 inch</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest d">What is your preferred type of processor?</p>
+                <select name="role" required id="processor" class="formControl">
+                    <option value disabled selected >Select</option>
+                    <option value="option a">Intel Core i3</option>
+                    <option value="option b">Intel Core i5</option>
+                    <option value="option c">Intel Core i7</option>
+                    <option value="option d">Intel Core i9</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p id="quest e">What is your preferred amount of RAM?</p>
+                <select name="role" required id="RAM" class="formControl">
+                    <option value disabled selected >Select</option>
+                    <option value="option a">8 GB</option>
+                    <option value="option b">16 GB</option>
+                    <option value="option c">32 GB</option>
+                    <option value="option d">64 GB</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="personal-questionnaire.js"></script>
+</body>
+</html>
